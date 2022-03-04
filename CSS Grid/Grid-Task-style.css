@@ -1,0 +1,75 @@
+*{
+    font-family: sans-serif;
+}
+.job-title {
+    font-weight: 500;
+    color: rgba(111, 110, 110, 0.9);
+}
+
+.one {
+    font-weight: 800;
+}
+
+.parent {
+    background-color: #EEE;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
+    gap: 10px;
+}
+
+.parent div {
+    border-bottom: 4px solid salmon;
+    padding: 5px;
+}
+
+.osama {
+    background-color: white;
+    grid-column: 1 / 3;
+    grid-row: 1 / 1;
+}
+
+.adham {
+    background-color: white;
+    grid-row: 1 / 1;
+}
+
+.fady {
+    grid-row: 1 /5;
+    background-color: black;
+    color: white;
+}
+
+.hady {
+    background-color: white;
+    grid-row: 2 / 5;
+}
+
+.khaled {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    background-color: black;
+    color: white;
+}
+
+.ahmed {
+    grid-column: 2 / 4;
+    background-color: white;
+}
+
+.eissa {
+    background-color: white;
+}
+ .amr {
+     background-color: black;
+     color: white;
+ }
+
+ .yousef {
+    background-color: white;
+ }
+
+ .omar {
+    background-color: white;
+ }
