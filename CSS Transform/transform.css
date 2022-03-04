@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ass-1 {
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    background-color: #EEE;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: cornflowerblue;
+    align-items: center;
+    margin: 5% auto;
+    border: 1px solid rgb(196, 196, 196);
+    position: relative;
+}
+
+.ass-1::after {
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: cornflowerblue;
+    z-index: -1;
+    position: absolute;
+    transform: rotate(-11deg)
+}
+
+.ass-1::before {
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: deeppink;
+    z-index: -2;
+    position: absolute;
+    transform: rotate(11deg);
+}
+
+.ass-2 {
+    width: 200px;
+    height: 200px;
+    background-color: #EEE;
+    padding: 5px;
+    font-weight: bold;
+    color: cornflowerblue;
+    border: 10px solid;
+    border-color: cornflowerblue cornflowerblue cornflowerblue white ;
+    border-radius: 50%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ass-2::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: deeppink;
+    border: 10px solid;
+    border-color: deeppink white deeppink deeppink;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.ass-3 {
+    width: 200px;
+    height: 200px;
+    background-color: #EEE;
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    color: cornflowerblue;
+    position: relative;
+}
+
+.ass-3::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 50%;
+    z-index: -1;
+    border: 10px solid;
+    border-color: cornflowerblue cornflowerblue cornflowerblue transparent;
+    transition-delay: 0.2s ;
+    transition-duration: 0.5s;
+}
+.ass-3::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background-color: transparent;
+    border-radius: 50%;
+    z-index: -2;
+    border: 10px solid;
+    border-color: palevioletred transparent palevioletred palevioletred ;
+    transition-delay: 0.8s;
+    transition-duration:0.5s ;
+}
+
+.ass-3:hover.ass-3::before {
+    transform: rotate(360deg);
+}
+
+.ass-3:hover.ass-3::after {
+    transform: rotate(360deg);
+}
